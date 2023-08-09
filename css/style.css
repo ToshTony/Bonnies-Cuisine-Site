@@ -1265,7 +1265,7 @@ h3 {
 }
 
 .slider_img_2 {
-  background-image: url(../img/banner/slide9.jpg);
+  background-image: url(../img/banner/homeslide.jpeg);
 }
 
 .slider_img_3 {
@@ -1348,7 +1348,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL August/199 Flatter Catering/199 Flatter Catering-HTML/scss/_video.scss */
 .video_bg {
-  background-image: url(../img/banner/vidbg.jpg);
+  background-image: url(../img/banner/viddbg.jpeg);
 }
 
 /* line 4, ../../Arafath/CL/CL August/199 Flatter Catering/199 Flatter Catering-HTML/scss/_video.scss */
@@ -1997,16 +1997,16 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL August/199 Flatter Catering/199 Flatter Catering-HTML/scss/_breadcam.scss */
 .breadcam_bg_1 {
-  background-image: url(../img/banner/crew.jpg);
+  background-image: url(../img/banner/aboutt.jpeg);
 }
 
 
 .breadcam_service {
-  background-image: url(../img/banner/services.jpg);
+  background-image: url(../img/banner/serviecb.jpeg);
 }
 
 .breadcam_menu {
-  background-image: url(../img/banner/menupicc.jpg);
+  background-image: url(../img/banner/menub.jpeg);
 }
 
 
@@ -2015,7 +2015,7 @@ h3 {
 }
 
 .breadcam_contact {
-  background-image: url(../img/banner/conts.jpg);
+  background-image: url(../img/banner/contactimg.jpg);
 }
 
 
