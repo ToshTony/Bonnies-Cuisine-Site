@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4 Seasons - Affiliate Products</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #7ac269;
+      padding: 1rem;
+      text-align: center;
+      color: white;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .product-form,
+    .product-list {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #7ac269;
+    }
+
+    /* Style for the product slots */
+    .product {
+      background-color: yellow;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    #formContainer {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#myForm {
+    /* Add form styles here */
+}
+
+#thankYouMessage {
+    display: none;
+    text-align: center;
+    font-size: 18px;
+    color: green;
+    padding: 20px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>4 Seasons - Affiliate Products</h1>
+  </header>
+  <main>
+    <section class="product-form">
+      <h2>Add a New Product</h2>
+      <form id="productForm">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" required>
+        <br>
+        <label for="productDescription">Product Description:</label>
+        <textarea id="productDescription" required></textarea>
+        <br>
+        <label for="affiliateLink">Affiliate Link:</label>
+        <input type="url" id="affiliateLink" required>
+        <br>
+        <button type="submit">Add Product</button>
+      </form>
+
+
+      <div id="thankYouMessage" style="display: none;">
+        <p>Thank you for submitting the form!</p>
+    </div>
+
+
+    </section>
+    <section class="product-list">
+      <h2>Products</h2>
+      <div id="productList">
+        <!-- Sample Product Slots -->
+        <div class="product">
+          <h3>Sample Product 1</h3>
+          <p>This is a sample product description 1.</p>
+          <a href="#" target="_blank">Purchase</a>
+        </div>
+        <div class="product">
+          <h3>Sample Product 2</h3>
+          <p>This is a sample product description 2.</p>
+          <a href="#" target="_blank">Purchase</a>
+        </div>
+        <div class="product">
+          <h3>Sample Product 3</h3>
+          <p>This is a sample product description 3.</p>
+          <a href="#" target="_blank">Purchase</a>
+        </div>
+        <!-- Add more product slots as needed -->
+      </div>
+    </section>
+
+   
+
+
+  </main>
+  <footer>
+    <p>&copy; 2023 4 Seasons</p>
+  </footer>
+
+  <script>
+    const productForm = document.getElementById('productForm');
+    const productList = document.getElementById('productList');
+
+    productForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // Fetch form data (e.g., product name, description, and affiliate link)
+      const productName = e.target.elements.productName.value;
+      const productDescription = e.target.elements.productDescription.value;
+      const affiliateLink = e.target.elements.affiliateLink.value;
+
+      // Create a new product div element
+      const newProduct = document.createElement('div');
+      newProduct.classList.add('product');
+
+      // Construct the product HTML structure
+      newProduct.innerHTML = `
+        <h3>${productName}</h3>
+        <p>${productDescription}</p>
+        <a href="${affiliateLink}" target="_blank">Purchase</a>
+      `;
+
+      // Add the new product to the product list
+      productList.appendChild(newProduct);
+
+     
+      // Clear the form fields after adding the product
+      e.target.reset();
+
+      document.getElementById('productForm').style.display = 'none';
+       document.getElementById('thankYouMessage').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

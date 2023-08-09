@@ -1,0 +1,17 @@
+---------------Workflow-------------
+
+1. Login and Logout
+2. User accounts
+3. image operations (compressing and resizing, gallery, sorting)
+4. Order operations
+5. Contact Us
+6. Email accounts
+7. Video Operations (Editing etc..)
+8. Link social media
+9. User Feedback 
+10. USer Communication (email, text)
+11. Products and offers
+12. Mobile app version
+13. SEO and marketing
+14. Analytics and user interaction
+15.  
