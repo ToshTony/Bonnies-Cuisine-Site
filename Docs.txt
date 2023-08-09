@@ -15,3 +15,13 @@
 13. SEO and marketing
 14. Analytics and user interaction
 15.  
+
+
+
+
+-------------------Tools----------------------
+1. Image Magick
+    - Resize single photo
+        convert input_image.jpg -resize 800x600 output_image.jpg  ....maintains aspect ratio
+        convert photo.jpg -resize 800x600! output_photo.jpg       ....Ignores Aspect Ratio
+
