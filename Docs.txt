@@ -25,3 +25,7 @@
         convert input_image.jpg -resize 800x600 output_image.jpg  ....maintains aspect ratio
         convert photo.jpg -resize 800x600! output_photo.jpg       ....Ignores Aspect Ratio
 
+
+
+Update:
+- Add new pictures
